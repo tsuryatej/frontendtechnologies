@@ -1,0 +1,44 @@
+<div class="row">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="col-md-6 offset-md-3">
+      <h3 class="text-center mb-4">{{formTitle}}</h3>
+
+      <div class="mb-3 row">
+        <label for="fName" class="col-sm-2 col-form-label">Firstname</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control form-control-sm rounded-0 border border-dark" id="fName"
+                 placeholder="Ex: John" formControlName="fName">
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="lName" class="col-sm-2 col-form-label">Lastname</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control form-control-sm rounded-0 border border-dark" id="lName"
+                 placeholder="Ex: Doe" formControlName="lName">
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="email" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control form-control-sm rounded-0 border border-dark" id="email"
+                 placeholder="email@example.com" formControlName="email">
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="password" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control form-control-sm rounded-0 border border-dark" id="password"
+                 placeholder="*********" formControlName="password">
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-sm border me-md-2" type="reset">Reset</button>
+        <button class="btn btn-sm btn-primary" type="submit" [disabled]="form.invalid">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>

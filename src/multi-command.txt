@@ -1,0 +1,1 @@
+ng g c header --style=scss --skip-tests && ng g c footer --style=scss --skip-tests && ng g c main-nav --style=scss --skip-tests && ng g c login --style=scss --skip-tests && ng g c logout --style=scss --skip-tests && ng g c register --style=scss --skip-tests && ng g c content-card --style=scss --skip-tests && ng g c custom-button --style=scss --skip-tests
