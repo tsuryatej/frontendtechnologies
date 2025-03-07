@@ -1,0 +1,18 @@
+{
+  "routes": {
+    "/": {},
+    "/about": {},
+    "/child": {},
+    "/contact": {},
+    "/content-card": {},
+    "/custom-button": {},
+    "/footer": {},
+    "/home": {},
+    "/login": {},
+    "/logout": {},
+    "/main-nav": {},
+    "/parent": {},
+    "/register": {},
+    "/sub-child": {}
+  }
+}
